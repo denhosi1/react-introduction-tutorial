@@ -4,14 +4,12 @@
 git checkout step-6
 ```
 
-When building a React application you go through a process of nesting components within components. This 
-results in a component heirarchy. Although it may not have been obvious we have been already doing This
-with our `App` component and our nested HTML components (in React the html elements are essentailly components)
-and out `EmployeeListItem` component.
+When building a React application you go through a process of nesting components within components; This 
+results in a component heirarchy. We have already been doing this with our `App` component, our nested HTML components (in React the html elements are essentailly components) and our `EmployeeListItem` component although it may not have been obvious.
 
-## Chilren and component nesting
+## Children and component nesting
 
-When you have a component and nest another component inside of it you are creating a parent -> child relationship.
+When you have a component and nest another component inside of it, you are creating a parent -> child relationship.
 Take this JSX snippit:
 
 ``` javasciprt
@@ -55,7 +53,7 @@ Nesting our EmployeeListItems like this:
 
 ```
 
-This is equivilent to writing
+is equivalent to writing
 
 ```
 
@@ -70,6 +68,6 @@ This is equivilent to writing
 The parent component will receive the array of components as `props.children`. However if there is only
 one component it will receive the component itself without the array wrapper for performance reasons.
 
-Now that I have shown you how to nest components. What if we want to switch between?
+Now that I have shown you how to nest components. What if we want to switch between them?
 
 Next step - [Basic Routing](07-Basic-Routing.md)
